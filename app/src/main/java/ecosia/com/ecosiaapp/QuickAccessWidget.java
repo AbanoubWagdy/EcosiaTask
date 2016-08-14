@@ -18,6 +18,7 @@ public class QuickAccessWidget extends AppWidgetProvider {
     private final String ACTION_WIDGET_PLAY = "Play";
 
     private final String ACTION_WIDGET_STOP = "Stop";
+    private RemoteViews views;
 
     @Override
     public void onUpdate(Context context, AppWidgetManager appWidgetManager, int[] appWidgetIds) {
@@ -29,7 +30,7 @@ public class QuickAccessWidget extends AppWidgetProvider {
 
     private void updateAppWidget(Context context, AppWidgetManager appWidgetManager, int appWidgetId) {
 
-        final RemoteViews views = new RemoteViews(context.getPackageName(), R.layout.quick_access_widget);
+        views = new RemoteViews(context.getPackageName(), R.layout.quick_access_widget);
 
         Intent playIntent = new Intent(context, Mp3PlayingService.class);
         playIntent.setAction(ACTION_WIDGET_PLAY);

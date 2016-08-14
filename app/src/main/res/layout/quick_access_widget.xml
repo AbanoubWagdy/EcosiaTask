@@ -15,9 +15,9 @@
             android:layout_marginLeft="19dp"
             android:layout_marginStart="19dp"
             android:text="Please press play button to play a random song"
-            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textAppearance="?android:attr/textAppearanceSmall"
             android:textColor="@color/black"
-            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
             android:layout_toRightOf="@+id/imageView"
             android:layout_toEndOf="@+id/imageView" />
 
@@ -31,6 +31,18 @@
             android:layout_centerVertical="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/black"
+            android:id="@+id/tvMediaName"
+            android:layout_marginTop="7dp"
+            android:lines="2"
+            android:layout_below="@+id/textView"
+            android:layout_alignLeft="@+id/textView"
+            android:layout_alignStart="@+id/textView" />
 
     </RelativeLayout>
 

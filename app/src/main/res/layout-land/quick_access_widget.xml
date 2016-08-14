@@ -14,10 +14,10 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="19dp"
             android:layout_marginStart="19dp"
-            android:text="Play Music"
-            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Please press play button to play a random song"
+            android:textAppearance="?android:attr/textAppearanceSmall"
             android:textColor="@color/black"
-            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
             android:layout_toRightOf="@+id/imageView"
             android:layout_toEndOf="@+id/imageView" />
 
